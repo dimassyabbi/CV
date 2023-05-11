@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dimas Syabbi Alfaaz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <a href="#Profil">Profil</a>
+        <a href="#Pendidikan">Pendidikan</a>
+        <a href="#Pengalaman">Pengalaman</a>
+        <a href="#Keterampilan">Keterampilan</a>
+        <a href="#Kontak">Kontak</a>
+        <label class="switch">
+          <input type="checkbox" id="toogleSwitch" onclick="switchTheme()" />
+          <span class="slider round"></span>
+        </label>
+        <p >Pilih Tema</p>
+        
+      </div>
+    </nav>
+    <div class="container">
+      <header>
+        <h1 style="margin-top: 20px">Dimas Syabbi Alfaaz</h1>
+        <img src="./assets/profile-picture.gif" style="width: 190px" />
+        <br />
+        <p>
+          <br />
+          <b>Alamat:</b> Denasri Wetan,Batang <br />
+          <b>Telepon:</b> 089665967439 <br />
+          <b>Email:</b> dimassyabbi@gmail.com <br />
+          <br />
+          <a href="https://www.linkedin.com/in/dimas-syabbi-alfaaz-27a752192/">
+            <img
+              src="./assets/linkedin.png"
+              alt="linkedin"
+              style="width: 28px; height: 28px; border: 0"
+            />
+          </a>
+          <a href="https://github.com/dimassyabbi">
+            <img
+              src="./assets/github.png"
+              alt="github"
+              style="width: 28px; height: 28px; border: 0"
+            />
+          </a>
+          <a href="https://twitter.com/dimassyb">
+            <img
+              src="./assets/twitter.png"
+              alt="twitter"
+              style="width: 28px; height: 28px; border: 0"
+            />
+          </a>
+          <a href="https://www.facebook.com/dimassyb">
+            <img
+              src="./assets/facebook.ico"
+              alt="facebook"
+              style="width: 28px; height: 28px; border: 0"
+            />
+          </a>
+          <br />
+        </p>
+      </header>
+      <section class="content">
+        <h3 id="Profil">Profil</h3>
+        <p>
+          Saya adalah seorang mahasiswa jurusan Teknik Informatika . Saya
+          mempunyai pengalaman dalam mengembangkan aplikasi mobile dan web,
+          serta memiliki pengetahuan tentang database dan pemrograman
+          berorientasi objek.Saya juga mempunyai keahlian dalam analisis data
+          dan visualisasi data.
+        </p>
+        <h3 id="Pendidikan">Pendidikan</h3>
+        <ul>
+          <li><b>STMIK Widya Pratama Pekalongan </b>,2022 - Sekarang</li>
+          <li><b>SMK Negeri 1 Kandeman </b>, 2018-2021</li>
+          <li><b>SMP Negeri 1 Batang </b>, 2015-2018</li>
+          <li><b>SD Negeri 1 Denasri Wetan </b>, 2009-2015</li>
+        </ul>
+        <h3 id="Pengalaman">Pengalaman</h3>
+        <ul>
+          <li>
+            <b>Magang di </b>
+            <a href="https://cekotechnology.com"> CV.Cekotechnology</a>,
+            Semarang , Jawa Tengah <br />
+            <ul>
+              <li>
+                Bertanggung jawab dalam pengembangan aplikasi mobile dan website
+                perusahaan
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h3 id="Keterampilan">Keterampilan</h3>
+        <ul>
+          <li>
+            <b>Bahasa Pemrograman:</b>
+            Java,Python,HTML,CSS,C++,Javascript.
+          </li>
+          <li><b>Pengembangan Aplikasi Mobile :</b> Android Studio,Flutter.</li>
+          <li><b>Basis Data :</b> MySQL,PostgreSQL.</li>
+          <li><b>Desain :</b> Figma.</li>
+          <li>
+            <b>Bahasa:</b>
+            <ul>
+              <li>Indonesia (Fluent)</li>
+              <li>English (Native)</li>
+            </ul>
+          </li>
+        </ul>
+        <h3 id="Kontak">Kontak</h3>
+        <p>
+          <b>Dimas Syabbi Alfaaz</b>
+          <br />
+          <b>Alamat:</b> Denasri Wetan,Batang <br />
+          <b>E-mail:</b> dimassyabbi@gmail.com <br />
+          <b>Telepon:</b> 089665967439 <br />
+          Mahasiswa Teknik Informatika <br />
+          STMIK Widya Pratama Pekalongan <br />
+          Jawa Tengah,Indonesia <br />
+        </p>
+      </section>
+    </div>
+    <script>
+      const toogleSwitch = document.getElementById("toogleSwitch");
+      function setLightTheme() {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+      }
+
+      function setDarkTheme() {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+      }
+      function switchTheme() {
+        if (toogleSwitch.checked) {
+          setDarkTheme();
+        } else {
+          setLightTheme();
+        }
+      }
+      
+      toogleSwitch.addEventListener("change", switchTheme, false);
+    </script>
+  </body>
+</html>
